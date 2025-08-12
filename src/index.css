@@ -1,0 +1,90 @@
+.home-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-container h1 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.button-group button {
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(255,118,140,0.5);
+  transition: background 0.3s ease;
+}
+
+.button-group button:hover {
+  background: linear-gradient(135deg, #ff4f70, #ff5a8e);
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #f85032, #e73827);
+  box-shadow: 0 6px 15px rgba(247, 80, 50, 0.6);
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #d63021, #bf2b1d);
+}
+
+/* Table styles */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  color: #222;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+thead {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-weight: 700;
+}
+
+th, td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff4f70;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+}

@@ -1,0 +1,137 @@
+/* Full-page background */
+.page-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Form container */
+.login-form {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 50px 40px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.login-title {
+  margin-bottom: 35px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Error box */
+.login-error {
+  background: rgba(255, 75, 75, 0.9);
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(255, 0, 0, 0.4);
+}
+
+/* Input group for floating labels */
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+/* Placeholder hidden, since we use floating labels */
+.input-group input::placeholder {
+  color: transparent;
+}
+
+/* Label styles */
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  font-weight: 500;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* When input is focused or filled, float label up */
+.input-group input:focus + label,
+.input-group input.filled + label {
+  top: 6px;
+  font-size: 0.8rem;
+  color: #ffd369;
+  background: rgba(102, 126, 234, 0.9);
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+/* Button */
+.login-btn {
+  background: #ffd369;
+  color: #222;
+  padding: 16px 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(255, 211, 105, 0.6);
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: #e6b93d;
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Register link */
+.register-link {
+  margin-top: 30px;
+  font-size: 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.register-link .link {
+  color: #ffd369;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-link .link:hover {
+  color: #ffe79a;
+  text-decoration: underline;
+}
